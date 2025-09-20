@@ -1,0 +1,54 @@
+.voice-input {
+    margin-top: 10px;
+}
+
+.mic-button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mic-button.active {
+    background: #dc3545;
+    animation: pulse 1.5s infinite;
+}
+
+.mic-button:hover {
+    opacity: 0.9;
+}
+
+.listening-indicator {
+    text-align: center;
+    color: #dc3545;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.transcript {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
